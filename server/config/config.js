@@ -5,3 +5,26 @@
 // =========================
 
 process.env.PORT = process.env.PORT || 3000; 
+
+//=================
+//  Entorno
+//=================
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
+
+//=================
+//  Base de datos
+//=================
+
+let urlDB;
+
+if (process.env.NODE_ENV === 'dev'){
+    urlDB = 'mongodb://localhost:27017/Cafe';
+} else{
+    urlDB = 'mongodb+srv://pablo:FR5aCcpSMxq8ZdxR@cluster0-nppxe.mongodb.net/cafe';
+}
+
+process.env.urlDB = urlDB;
+
+//mongodb://localhost:27017/Cafe
+//mongodb+srv://pablo:FR5aCcpSMxq8ZdxR@cluster0-nppxe.mongodb.net/cafe
