@@ -39,3 +39,8 @@ process.env.urlDB = urlDB;
 
 //mongodb://localhost:27017/Cafe
 //mongodb+srv://pablo:FR5aCcpSMxq8ZdxR@cluster0-nppxe.mongodb.net/cafe
+
+//=================
+//  Google Client ID
+//=================
+process.env.CLIENT_ID = process.env.CLIENT_ID || '444885179355-j38chjk9gk7jfvcaivbt09b1rol480bm.apps.googleusercontent.com';
